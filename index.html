@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asah Otak Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Asah Otak Game</h1>
+    <div id="question-container">
+        <h2 id="clue">Clue: </h2>
+        <div id="input-container">
+
+        </div>
+    </div>
+    <button id="submit-answer">Jawab</button>
+    <div id="result"></div>
+    <div id="score-container">
+        <p>Total Points: <span id="total-score">0</span></p>
+    </div>
+    <div id="options">
+        <button id="save-score">Simpan Poin</button>
+        <button id="reset-game">Ulangi</button>
+    </div>
+</div>
+<div id="score-history-container">
+    <h2>Riwayat Skor</h2>
+    <ul id="score-history"></ul>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Save Your Score</h2>
+        <form id="save-form" method="POST" action="php/save_score.php">
+            <label for="username">Nama Anda:</label>
+            <input type="text" id="username" name="username" required>
+            <input type="hidden" id="totalScore" name="totalScore">
+            <button type="submit">Save</button>
+        </form>
+    </div>
+</div>
+
+<script src="javascript/script.js"></script>
+</body>
+</html>

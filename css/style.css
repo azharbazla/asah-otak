@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#input-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#input-container input {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40px;
+    margin: 0 5px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+#input-container input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+#result,
+#score-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#submit-answer {
+    display: block;
+    margin: 20px auto;
+}
+#save-score,
+#reset-game {
+    margin: 10px;
+}
+
+#score-history-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#score-history {
+    list-style-type: none;
+    padding: 0;
+}
+
+#score-history li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eaeaea;
+    color: #555;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.close:hover {
+    color: #dc3545;
+}
