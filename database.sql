@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS testangkasapura;
-USE testangkasapura;
+CREATE DATABASE IF NOT EXISTS asah_otak;
+USE asah_otak;
 
 CREATE TABLE IF NOT EXISTS master_kata
 (
